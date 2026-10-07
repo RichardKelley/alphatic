@@ -1,0 +1,20 @@
+[project]
+name = "alphatic"
+version = "0.1.0"
+description = "6x6 Pygame tic-tac-toe with an interactive policy-guided search tree"
+readme = "README.md"
+authors = [
+    { name = "Richard Kelley", email = "richard.kelley@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "pygame-ce>=2.5.8",
+]
+
+[project.scripts]
+alphatic = "alphatic:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
